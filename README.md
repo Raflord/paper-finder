@@ -18,7 +18,7 @@ Observando esse problema, fica claro a necessidade de um sistema de controle de 
 
 O sistema consiste em apenas uma tela, onde o operador de empilhadeira pode registrar algum palete de papel e também fazer a busca por um papel específico na lista. O palete com papel tem as seguintes informações:
 
-- Nome
+- Nome (por ser apenas um projeto de demonstração, não é apresentado o catálogo completo, somente algumas opções para teste)
 - Posição (magazine: A-Z e posição no magazine: 1-8. ex.: E5)
 - Lado (superior ou inferior)
 
