@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Paper Finder</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <img
+            src="assets/images/logo.png"
+            alt="Logo Arauco"
+            class="logo-arauco"
+          />
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <form id="myForm">
+        <label for="material-description">Descrição do material</label>
+        <select
+          class="dropdown-menu"
+          id="material-description"
+          name="material-description"
+          data-form-material
+        >
+          <option value="">Nome</option>
+          <option value="branco">Branco</option>
+          <option value="carvalho">Carvalho</option>
+          <option value="carvalho americano">Carvalho Americano</option>
+          <option value="concreto">Concreto</option>
+          <option value="concreto metropolitan">Concreto Metropolitan</option>
+          <option value="cumaru">Cumaru</option>
+          <option value="grafito">Grafito</option>
+          <option value="lotus">Lotus</option>
+          <option value="nimbus">Nimbus</option>
+          <option value="onix">Ônix</option>
+          <option value="preto">Preto</option>
+        </select>
+
+        <label for="magazine">Posição do material</label>
+        <select
+          class="dropdown-menu"
+          id="magazine"
+          name="magazine"
+          data-form-magazine
+        >
+          <option value="">Magazine</option>
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+          <option value="d">D</option>
+          <option value="e">E</option>
+          <option value="f">F</option>
+          <option value="g">G</option>
+          <option value="h">H</option>
+          <option value="i">I</option>
+          <option value="j">J</option>
+          <option value="k">K</option>
+          <option value="l">L</option>
+          <option value="m">M</option>
+          <option value="n">N</option>
+          <option value="o">O</option>
+          <option value="p">P</option>
+          <option value="q">Q</option>
+          <option value="r">R</option>
+          <option value="s">S</option>
+          <option value="t">T</option>
+          <option value="u">U</option>
+          <option value="v">V</option>
+          <option value="w">W</option>
+          <option value="x">X</option>
+          <option value="y">Y</option>
+          <option value="z">Z</option>
+        </select>
+
+        <select
+          class="dropdown-menu"
+          id="magazine"
+          name="magazine"
+          data-form-position
+        >
+          <option value="">Posição</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+
+        <fieldset>
+          <legend>Qual é o lado do materia?</legend>
+          <label for="radio-superior"
+            ><input
+              type="radio"
+              name="paper-side"
+              value="superior"
+              id="radio-superior"
+              checked
+            />Superior</label
+          >
+          <label for="radio-inferior"
+            ><input
+              type="radio"
+              name="paper-side"
+              value="inferior"
+              id="radio-inferior"
+            />Inferior</label
+          >
+        </fieldset>
+
+        <button class="form-button" data-form-button>Novo Item</button>
+      </form>
+
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          onkeyup="searchFunction()"
+          placeholder="Qual papel está procurando?"
+        />
+
+        <table id="paperTable">
+          <thead>
+            <tr class="header">
+              <th>Nome/Cor</th>
+              <th>Posição</th>
+              <th>Lado</th>
+            </tr>
+          </thead>
+          <tbody data-tbody></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
